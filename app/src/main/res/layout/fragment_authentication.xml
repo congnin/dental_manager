@@ -3,15 +3,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <vn.stage.dental_manager.view.CustomAppbar
-        android:id="@+id/custom_app_bar"
+    <com.prostage.dental_manage.views.TitleBar
+        android:id="@+id/title_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/custom_app_bar"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_bar"
         android:fillViewport="true">
 
         <RelativeLayout
@@ -22,7 +22,6 @@
                 android:id="@+id/iv_background"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/height_image_login"
-                android:contentDescription="@string/app_name"
                 android:scaleType="fitXY" />
 
             <LinearLayout
@@ -33,29 +32,29 @@
                 android:layout_marginTop="20dp"
                 android:orientation="horizontal">
 
-                <EditText
+                <com.prostage.dental_manage.views.ExtendedEditText
                     android:id="@+id/tv_account"
                     android:layout_width="0dp"
                     android:layout_height="35dp"
                     android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="16dp"
                     android:layout_marginStart="16dp"
                     android:layout_weight="1"
                     android:background="@drawable/background_corner_login"
                     android:gravity="center"
-                    android:inputType="text"
                     android:maxLength="12"
                     android:maxLines="1"
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp"
                     android:textSize="@dimen/size_edittext" />
 
-                <EditText
+                <com.prostage.dental_manage.views.ExtendedEditText
                     android:id="@+id/tv_password"
                     android:layout_width="0dp"
                     android:layout_height="35dp"
                     android:layout_gravity="center_horizontal"
-                    android:layout_marginEnd="16dp"
-                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="16dp"
                     android:layout_weight="1"
                     android:background="@drawable/background_corner_login"
                     android:gravity="center"
@@ -91,20 +90,5 @@
                 android:textColor="@android:color/white" />
         </RelativeLayout>
     </ScrollView>
-
-    <RelativeLayout
-        android:id="@+id/progLoading"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/very_light_gray"
-        android:visibility="gone">
-
-        <ProgressBar
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:indeterminateOnly="true"
-            android:indeterminateTint="@color/colorPrimary" />
-    </RelativeLayout>
 
 </RelativeLayout>

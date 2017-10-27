@@ -6,8 +6,8 @@
 
     <ImageView
         android:id="@+id/iv_splash"
-        android:layout_width="@dimen/_100ssp"
-        android:layout_height="@dimen/_100ssp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:layout_gravity="center_horizontal"

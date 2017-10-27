@@ -3,7 +3,6 @@
     <color name="colorPrimary">#1F4DA3</color>
     <color name="colorPrimaryDark">#0E3177</color>
     <color name="colorAccent">#F3373B</color>
-    <color name="light_gray">#bfbfbf</color>
     <color name="colorButtonLogin">#2358BC</color>
     <color name="lineView">#12000000</color>
     <color name="strokeEditText">#B1BCBE</color>
@@ -21,5 +20,5 @@
     <color name="holidayBackgroundColor">#FEC5BB</color>
     <color name="borderCalendarColor">#C4C4C4</color>
     <color name="gray">#bbbbbb</color>
-    <color name="very_light_gray">#34000000</color>
+    <color name="color_background_number_chat">#F44336</color>
 </resources>
